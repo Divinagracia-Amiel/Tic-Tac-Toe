@@ -28,6 +28,10 @@ namespace Tic_Tac_Toe
         public Form1()
         {
             InitializeComponent();
+            if (actv_tp_lft == 0)
+            {
+                tp_lft.BackColor = Color.Salmon;
+            }
         }
 
         private void tp_lft_Click(object sender, EventArgs e)
@@ -209,6 +213,14 @@ namespace Tic_Tac_Toe
                     actv_btm_rt = 0;
                 }
             }           
+        }
+
+        private void game_envi_Paint(object sender, PaintEventArgs e)
+        {
+            if (actv_tp_lft == 0)
+            {
+                tp_lft.BackColor = Color.Salmon;
+            }
         }
     }
 }
