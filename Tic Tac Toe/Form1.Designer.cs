@@ -43,6 +43,7 @@ namespace Tic_Tac_Toe
             // tp_lft
             // 
             this.tp_lft.Location = new System.Drawing.Point(12, 12);
+            this.tp_lft.Margin = new System.Windows.Forms.Padding(0);
             this.tp_lft.Name = "tp_lft";
             this.tp_lft.Size = new System.Drawing.Size(100, 100);
             this.tp_lft.TabIndex = 0;
@@ -51,7 +52,8 @@ namespace Tic_Tac_Toe
             // 
             // tp
             // 
-            this.tp.Location = new System.Drawing.Point(118, 12);
+            this.tp.Location = new System.Drawing.Point(112, 12);
+            this.tp.Margin = new System.Windows.Forms.Padding(0);
             this.tp.Name = "tp";
             this.tp.Size = new System.Drawing.Size(100, 100);
             this.tp.TabIndex = 1;
@@ -60,7 +62,8 @@ namespace Tic_Tac_Toe
             // 
             // tp_rt
             // 
-            this.tp_rt.Location = new System.Drawing.Point(224, 12);
+            this.tp_rt.Location = new System.Drawing.Point(212, 12);
+            this.tp_rt.Margin = new System.Windows.Forms.Padding(0);
             this.tp_rt.Name = "tp_rt";
             this.tp_rt.Size = new System.Drawing.Size(100, 100);
             this.tp_rt.TabIndex = 2;
@@ -69,7 +72,8 @@ namespace Tic_Tac_Toe
             // 
             // lft
             // 
-            this.lft.Location = new System.Drawing.Point(12, 118);
+            this.lft.Location = new System.Drawing.Point(12, 112);
+            this.lft.Margin = new System.Windows.Forms.Padding(0);
             this.lft.Name = "lft";
             this.lft.Size = new System.Drawing.Size(100, 100);
             this.lft.TabIndex = 3;
@@ -78,7 +82,8 @@ namespace Tic_Tac_Toe
             // 
             // mid
             // 
-            this.mid.Location = new System.Drawing.Point(118, 118);
+            this.mid.Location = new System.Drawing.Point(112, 112);
+            this.mid.Margin = new System.Windows.Forms.Padding(0);
             this.mid.Name = "mid";
             this.mid.Size = new System.Drawing.Size(100, 100);
             this.mid.TabIndex = 4;
@@ -87,7 +92,8 @@ namespace Tic_Tac_Toe
             // 
             // rt
             // 
-            this.rt.Location = new System.Drawing.Point(224, 118);
+            this.rt.Location = new System.Drawing.Point(212, 112);
+            this.rt.Margin = new System.Windows.Forms.Padding(0);
             this.rt.Name = "rt";
             this.rt.Size = new System.Drawing.Size(100, 100);
             this.rt.TabIndex = 5;
@@ -96,7 +102,8 @@ namespace Tic_Tac_Toe
             // 
             // btm_lft
             // 
-            this.btm_lft.Location = new System.Drawing.Point(12, 224);
+            this.btm_lft.Location = new System.Drawing.Point(12, 212);
+            this.btm_lft.Margin = new System.Windows.Forms.Padding(0);
             this.btm_lft.Name = "btm_lft";
             this.btm_lft.Size = new System.Drawing.Size(100, 100);
             this.btm_lft.TabIndex = 6;
@@ -105,7 +112,8 @@ namespace Tic_Tac_Toe
             // 
             // btm
             // 
-            this.btm.Location = new System.Drawing.Point(118, 224);
+            this.btm.Location = new System.Drawing.Point(112, 212);
+            this.btm.Margin = new System.Windows.Forms.Padding(0);
             this.btm.Name = "btm";
             this.btm.Size = new System.Drawing.Size(100, 100);
             this.btm.TabIndex = 7;
@@ -114,7 +122,8 @@ namespace Tic_Tac_Toe
             // 
             // btm_rt
             // 
-            this.btm_rt.Location = new System.Drawing.Point(224, 224);
+            this.btm_rt.Location = new System.Drawing.Point(212, 212);
+            this.btm_rt.Margin = new System.Windows.Forms.Padding(0);
             this.btm_rt.Name = "btm_rt";
             this.btm_rt.Size = new System.Drawing.Size(100, 100);
             this.btm_rt.TabIndex = 8;
