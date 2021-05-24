@@ -14,6 +14,8 @@ namespace Tic_Tac_Toe
     {
         string cir = "○";
         string crs = "x";
+        string turn = "○";
+
         public Form1()
         {
             InitializeComponent();
@@ -21,12 +23,30 @@ namespace Tic_Tac_Toe
 
         private void tp_lft_Click(object sender, EventArgs e)
         {
-            
+            if (turn == cir)
+            {
+                tp_lft.Text = cir;
+                turn = crs;
+            }
+            else
+            {
+                tp_lft.Text = crs;
+                turn = cir;
+            }
         }
 
         private void tp_Click(object sender, EventArgs e)
         {
-
+            if (turn == cir)
+            {
+                tp_lft.Text = cir;
+                turn = crs;
+            }
+            else
+            {
+                tp_lft.Text = crs;
+                turn = cir;
+            }
         }
 
         private void tp_rt_Click(object sender, EventArgs e)
