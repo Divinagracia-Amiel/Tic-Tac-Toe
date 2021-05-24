@@ -39,55 +39,118 @@ namespace Tic_Tac_Toe
         {
             if (turn == cir)
             {
-                tp_lft.Text = cir;
+                tp.Text = cir;
                 turn = crs;
             }
             else
             {
-                tp_lft.Text = crs;
+                tp.Text = crs;
                 turn = cir;
             }
         }
 
         private void tp_rt_Click(object sender, EventArgs e)
         {
-
+            if (turn == cir)
+            {
+                tp_rt.Text = cir;
+                turn = crs;
+            }
+            else
+            {
+                tp_rt.Text = crs;
+                turn = cir;
+            }
         }
 
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+  
         }
 
         private void lft_Click(object sender, EventArgs e)
         {
-
+            if (turn == cir)
+            {
+                lft.Text = cir;
+                turn = crs;
+            }
+            else
+            {
+                lft.Text = crs;
+                turn = cir;
+            }
         }
 
         private void mid_Click(object sender, EventArgs e)
         {
-
+            if (turn == cir)
+            {
+                mid.Text = cir;
+                turn = crs;
+            }
+            else
+            {
+                mid.Text = crs;
+                turn = cir;
+            }
         }
 
         private void rt_Click(object sender, EventArgs e)
         {
-
+            if (turn == cir)
+            {
+                rt.Text = cir;
+                turn = crs;
+            }
+            else
+            {
+                rt.Text = crs;
+                turn = cir;
+            }
         }
 
         private void btm_lft_Click(object sender, EventArgs e)
         {
-
+            if (turn == cir)
+            {
+                btm_lft.Text = cir;
+                turn = crs;
+            }
+            else
+            {
+                btm_lft.Text = crs;
+                turn = cir;
+            }
         }
 
         private void btm_Click(object sender, EventArgs e)
         {
-
+            if (turn == cir)
+            {
+                btm.Text = cir;
+                turn = crs;
+            }
+            else
+            {
+                btm.Text = crs;
+                turn = cir;
+            }
         }
 
         private void btm_rt_Click(object sender, EventArgs e)
         {
-
+            if (turn == cir)
+            {
+                btm_rt.Text = cir;
+                turn = crs;
+            }
+            else
+            {
+                btm_rt.Text = crs;
+                turn = cir;
+            }
         }
     }
 }
