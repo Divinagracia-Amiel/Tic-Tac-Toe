@@ -12,6 +12,8 @@ namespace Tic_Tac_Toe
 {
     public partial class Form1 : Form
     {
+        string cir = "○";
+        string crs = "x";
         public Form1()
         {
             InitializeComponent();
@@ -19,7 +21,7 @@ namespace Tic_Tac_Toe
 
         private void tp_lft_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void tp_Click(object sender, EventArgs e)

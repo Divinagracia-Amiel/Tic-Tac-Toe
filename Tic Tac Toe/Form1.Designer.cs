@@ -42,7 +42,7 @@ namespace Tic_Tac_Toe
             // 
             // tp_lft
             // 
-            this.tp_lft.Location = new System.Drawing.Point(12, 12);
+            this.tp_lft.Location = new System.Drawing.Point(10, 69);
             this.tp_lft.Margin = new System.Windows.Forms.Padding(0);
             this.tp_lft.Name = "tp_lft";
             this.tp_lft.Size = new System.Drawing.Size(125, 125);
@@ -52,7 +52,7 @@ namespace Tic_Tac_Toe
             // 
             // tp
             // 
-            this.tp.Location = new System.Drawing.Point(137, 12);
+            this.tp.Location = new System.Drawing.Point(135, 69);
             this.tp.Margin = new System.Windows.Forms.Padding(0);
             this.tp.Name = "tp";
             this.tp.Size = new System.Drawing.Size(125, 125);
@@ -62,7 +62,7 @@ namespace Tic_Tac_Toe
             // 
             // tp_rt
             // 
-            this.tp_rt.Location = new System.Drawing.Point(262, 12);
+            this.tp_rt.Location = new System.Drawing.Point(260, 69);
             this.tp_rt.Margin = new System.Windows.Forms.Padding(0);
             this.tp_rt.Name = "tp_rt";
             this.tp_rt.Size = new System.Drawing.Size(125, 125);
@@ -72,7 +72,7 @@ namespace Tic_Tac_Toe
             // 
             // lft
             // 
-            this.lft.Location = new System.Drawing.Point(137, 262);
+            this.lft.Location = new System.Drawing.Point(135, 319);
             this.lft.Margin = new System.Windows.Forms.Padding(0);
             this.lft.Name = "lft";
             this.lft.Size = new System.Drawing.Size(125, 125);
@@ -82,7 +82,7 @@ namespace Tic_Tac_Toe
             // 
             // mid
             // 
-            this.mid.Location = new System.Drawing.Point(262, 137);
+            this.mid.Location = new System.Drawing.Point(260, 194);
             this.mid.Margin = new System.Windows.Forms.Padding(0);
             this.mid.Name = "mid";
             this.mid.Size = new System.Drawing.Size(125, 125);
@@ -92,7 +92,7 @@ namespace Tic_Tac_Toe
             // 
             // rt
             // 
-            this.rt.Location = new System.Drawing.Point(12, 262);
+            this.rt.Location = new System.Drawing.Point(10, 319);
             this.rt.Margin = new System.Windows.Forms.Padding(0);
             this.rt.Name = "rt";
             this.rt.Size = new System.Drawing.Size(125, 125);
@@ -102,7 +102,7 @@ namespace Tic_Tac_Toe
             // 
             // btm_lft
             // 
-            this.btm_lft.Location = new System.Drawing.Point(12, 137);
+            this.btm_lft.Location = new System.Drawing.Point(10, 194);
             this.btm_lft.Margin = new System.Windows.Forms.Padding(0);
             this.btm_lft.Name = "btm_lft";
             this.btm_lft.Size = new System.Drawing.Size(125, 125);
@@ -112,7 +112,7 @@ namespace Tic_Tac_Toe
             // 
             // btm
             // 
-            this.btm.Location = new System.Drawing.Point(262, 262);
+            this.btm.Location = new System.Drawing.Point(260, 319);
             this.btm.Margin = new System.Windows.Forms.Padding(0);
             this.btm.Name = "btm";
             this.btm.Size = new System.Drawing.Size(125, 125);
@@ -122,7 +122,7 @@ namespace Tic_Tac_Toe
             // 
             // btm_rt
             // 
-            this.btm_rt.Location = new System.Drawing.Point(137, 137);
+            this.btm_rt.Location = new System.Drawing.Point(135, 194);
             this.btm_rt.Margin = new System.Windows.Forms.Padding(0);
             this.btm_rt.Name = "btm_rt";
             this.btm_rt.Size = new System.Drawing.Size(125, 125);
@@ -134,7 +134,7 @@ namespace Tic_Tac_Toe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 450);
+            this.ClientSize = new System.Drawing.Size(396, 450);
             this.Controls.Add(this.btm_rt);
             this.Controls.Add(this.btm);
             this.Controls.Add(this.btm_lft);
