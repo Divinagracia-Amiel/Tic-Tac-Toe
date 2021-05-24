@@ -72,7 +72,7 @@ namespace Tic_Tac_Toe
             // 
             // lft
             // 
-            this.lft.Location = new System.Drawing.Point(135, 319);
+            this.lft.Location = new System.Drawing.Point(10, 194);
             this.lft.Margin = new System.Windows.Forms.Padding(0);
             this.lft.Name = "lft";
             this.lft.Size = new System.Drawing.Size(125, 125);
@@ -82,7 +82,7 @@ namespace Tic_Tac_Toe
             // 
             // mid
             // 
-            this.mid.Location = new System.Drawing.Point(260, 194);
+            this.mid.Location = new System.Drawing.Point(135, 194);
             this.mid.Margin = new System.Windows.Forms.Padding(0);
             this.mid.Name = "mid";
             this.mid.Size = new System.Drawing.Size(125, 125);
@@ -92,7 +92,7 @@ namespace Tic_Tac_Toe
             // 
             // rt
             // 
-            this.rt.Location = new System.Drawing.Point(10, 319);
+            this.rt.Location = new System.Drawing.Point(260, 194);
             this.rt.Margin = new System.Windows.Forms.Padding(0);
             this.rt.Name = "rt";
             this.rt.Size = new System.Drawing.Size(125, 125);
@@ -102,7 +102,7 @@ namespace Tic_Tac_Toe
             // 
             // btm_lft
             // 
-            this.btm_lft.Location = new System.Drawing.Point(10, 194);
+            this.btm_lft.Location = new System.Drawing.Point(10, 319);
             this.btm_lft.Margin = new System.Windows.Forms.Padding(0);
             this.btm_lft.Name = "btm_lft";
             this.btm_lft.Size = new System.Drawing.Size(125, 125);
@@ -112,7 +112,7 @@ namespace Tic_Tac_Toe
             // 
             // btm
             // 
-            this.btm.Location = new System.Drawing.Point(260, 319);
+            this.btm.Location = new System.Drawing.Point(135, 319);
             this.btm.Margin = new System.Windows.Forms.Padding(0);
             this.btm.Name = "btm";
             this.btm.Size = new System.Drawing.Size(125, 125);
@@ -122,7 +122,7 @@ namespace Tic_Tac_Toe
             // 
             // btm_rt
             // 
-            this.btm_rt.Location = new System.Drawing.Point(135, 194);
+            this.btm_rt.Location = new System.Drawing.Point(260, 319);
             this.btm_rt.Margin = new System.Windows.Forms.Padding(0);
             this.btm_rt.Name = "btm_rt";
             this.btm_rt.Size = new System.Drawing.Size(125, 125);

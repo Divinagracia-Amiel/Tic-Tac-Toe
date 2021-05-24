@@ -19,7 +19,7 @@ namespace Tic_Tac_Toe
         int actv_tp = 1;
         int actv_tp_rt = 1;
         int actv_lft = 1;
-        int actv_mid = 1;
+        int actv_md = 1;
         int actv_rt = 1;
         int actv_btm_lgt = 1;
         int actv_btm = 1;
@@ -118,21 +118,21 @@ namespace Tic_Tac_Toe
 
         private void mid_Click(object sender, EventArgs e)
         {
-            if (actv_mid == 1)
+            if (actv_md == 1)
             {
                 if (turn == cir)
                 {
                     mid.Text = cir;
                     turn = crs;
-                    actv_mid = 0;
+                    actv_md = 0;
                 }
                 else
                 {
                     mid.Text = crs;
                     turn = cir;
-                    actv_mid = 0;
+                    actv_md = 0;
                 }
-            }          
+            }
         }
 
         private void rt_Click(object sender, EventArgs e)
@@ -196,20 +196,19 @@ namespace Tic_Tac_Toe
         {
             if (actv_btm_rt == 1)
             {
-
-            }
-            if (turn == cir)
-            {
-                btm_rt.Text = cir;
-                turn = crs;
-                actv_btm_rt = 0;
-            }
-            else
-            {
-                btm_rt.Text = crs;
-                turn = cir;
-                actv_btm_rt = 0;
-            }
+                if (turn == cir)
+                {
+                    btm_rt.Text = cir;
+                    turn = crs;
+                    actv_btm_rt = 0;
+                }
+                else
+                {
+                    btm_rt.Text = crs;
+                    turn = cir;
+                    actv_btm_rt = 0;
+                }
+            }           
         }
     }
 }
