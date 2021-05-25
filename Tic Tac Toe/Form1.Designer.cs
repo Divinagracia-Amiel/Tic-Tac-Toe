@@ -44,6 +44,7 @@ namespace Tic_Tac_Toe
             // 
             // tp_lft
             // 
+            this.tp_lft.ForeColor = System.Drawing.SystemColors.ControlText;
             this.tp_lft.Location = new System.Drawing.Point(13, 97);
             this.tp_lft.Margin = new System.Windows.Forms.Padding(0);
             this.tp_lft.Name = "tp_lft";

@@ -15,6 +15,7 @@ namespace Tic_Tac_Toe
         string cir = "○";
         string crs = "x";
         string turn = "○";
+        IDictionary<int, string> pos = new Dictionary<int, string>();
         int actv_tp_lft = 1;
         int actv_tp = 1;
         int actv_tp_rt = 1;
@@ -42,7 +43,7 @@ namespace Tic_Tac_Toe
                 {
                     tp_lft.Text = cir;
                     turn = crs;
-                    actv_tp_lft = 0;
+                    actv_tp_lft = 0; 
                 }
                 else
                 {
