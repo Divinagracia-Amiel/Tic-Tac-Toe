@@ -43,13 +43,15 @@ namespace Tic_Tac_Toe
                 {
                     tp_lft.Text = cir;
                     turn = crs;
-                    actv_tp_lft = 0; 
+                    actv_tp_lft = 0;
+                    pos.Add(1, cir);
                 }
                 else
                 {
                     tp_lft.Text = crs;
                     turn = cir;
                     actv_tp_lft = 0; ;
+                    pos.Add(1, crs);
                 }
             }
             
@@ -64,12 +66,14 @@ namespace Tic_Tac_Toe
                     tp.Text = cir;
                     turn = crs;
                     actv_tp = 0;
+                    pos.Add(2, cir);
                 }
                 else
                 {
                     tp.Text = crs;
                     turn = cir;
                     actv_tp = 0;
+                    pos.Add(2, crs);
                 }
             }
             
@@ -84,12 +88,14 @@ namespace Tic_Tac_Toe
                     tp_rt.Text = cir;
                     turn = crs;
                     actv_tp_rt = 0;
+                    pos.Add(3, cir);
                 }
                 else
                 {
                     tp_rt.Text = crs;
                     turn = cir;
                     actv_tp_rt = 0;
+                    pos.Add(3, crs);
                 }
             }
             
@@ -110,12 +116,14 @@ namespace Tic_Tac_Toe
                     lft.Text = cir;
                     turn = crs;
                     actv_lft = 0;
+                    pos.Add(4, cir);
                 }
                 else
                 {
                     lft.Text = crs;
                     turn = cir;
                     actv_lft = 0;
+                    pos.Add(4, crs);
                 }
             }
             
@@ -130,12 +138,14 @@ namespace Tic_Tac_Toe
                     mid.Text = cir;
                     turn = crs;
                     actv_md = 0;
+                    pos.Add(5, cir);
                 }
                 else
                 {
                     mid.Text = crs;
                     turn = cir;
                     actv_md = 0;
+                    pos.Add(5, crs);
                 }
             }
         }
@@ -149,12 +159,14 @@ namespace Tic_Tac_Toe
                     rt.Text = cir;
                     turn = crs;
                     actv_rt = 0;
+                    pos.Add(6, cir);
                 }
                 else
                 {
                     rt.Text = crs;
                     turn = cir;
                     actv_rt = 0;
+                    pos.Add(6, crs);
                 }
             }           
         }
@@ -168,12 +180,14 @@ namespace Tic_Tac_Toe
                     btm_lft.Text = cir;
                     turn = crs;
                     actv_btm_lgt = 0;
+                    pos.Add(7, cir);
                 }
                 else
                 {
                     btm_lft.Text = crs;
                     turn = cir;
                     actv_btm_lgt = 0;
+                    pos.Add(7, crs);
                 }
             }           
         }
@@ -187,12 +201,14 @@ namespace Tic_Tac_Toe
                     btm.Text = cir;
                     turn = crs;
                     actv_btm = 0;
+                    pos.Add(8, cir);
                 }
                 else
                 {
                     btm.Text = crs;
                     turn = cir;
                     actv_btm = 0;
+                    pos.Add(8, crs);
                 }
             }           
         }
@@ -206,12 +222,14 @@ namespace Tic_Tac_Toe
                     btm_rt.Text = cir;
                     turn = crs;
                     actv_btm_rt = 0;
+                    pos.Add(9, cir);
                 }
                 else
                 {
                     btm_rt.Text = crs;
                     turn = cir;
                     actv_btm_rt = 0;
+                    pos.Add(9, crs);
                 }
             }           
         }
