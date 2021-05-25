@@ -15,6 +15,8 @@ namespace Tic_Tac_Toe
         string cir = "○";
         string crs = "x";
         string turn = "○";
+        string cir_comp = "○○○";
+        string crs_comp = "xxx";
         IDictionary<int, string> pos = new Dictionary<int, string>();
         int actv_tp_lft = 1;
         int actv_tp = 1;
@@ -22,7 +24,7 @@ namespace Tic_Tac_Toe
         int actv_lft = 1;
         int actv_md = 1;
         int actv_rt = 1;
-        int actv_btm_lgt = 1;
+        int actv_btm_lft = 1;
         int actv_btm = 1;
         int actv_btm_rt = 1;
 
@@ -53,8 +55,7 @@ namespace Tic_Tac_Toe
                     actv_tp_lft = 0; ;
                     pos.Add(1, crs);
                 }
-            }
-            
+            }      
         }
 
         private void tp_Click(object sender, EventArgs e)
@@ -75,8 +76,7 @@ namespace Tic_Tac_Toe
                     actv_tp = 0;
                     pos.Add(2, crs);
                 }
-            }
-            
+            }         
         }
 
         private void tp_rt_Click(object sender, EventArgs e)
@@ -97,8 +97,7 @@ namespace Tic_Tac_Toe
                     actv_tp_rt = 0;
                     pos.Add(3, crs);
                 }
-            }
-            
+            }           
         }
 
 
@@ -125,8 +124,7 @@ namespace Tic_Tac_Toe
                     actv_lft = 0;
                     pos.Add(4, crs);
                 }
-            }
-            
+            }          
         }
 
         private void mid_Click(object sender, EventArgs e)
@@ -173,20 +171,20 @@ namespace Tic_Tac_Toe
 
         private void btm_lft_Click(object sender, EventArgs e)
         {
-            if (actv_btm_lgt == 1)
+            if (actv_btm_lft == 1)
             {
                 if (turn == cir)
                 {
                     btm_lft.Text = cir;
                     turn = crs;
-                    actv_btm_lgt = 0;
+                    actv_btm_lft = 0;
                     pos.Add(7, cir);
                 }
                 else
                 {
                     btm_lft.Text = crs;
                     turn = cir;
-                    actv_btm_lgt = 0;
+                    actv_btm_lft = 0;
                     pos.Add(7, crs);
                 }
             }           
@@ -236,10 +234,151 @@ namespace Tic_Tac_Toe
 
         private void game_envi_Paint(object sender, PaintEventArgs e)
         {
-            if (actv_tp_lft == 0)
+            string pos_123 = "";
+            string pos_456 = "";
+            string pos_789 = "";
+            string pos_147 = "";
+            string pos_258 = "";
+            string pos_369 = "";
+            string pos_753 = "";
+            string pos_159 = "";
+            if (actv_tp_lft == 0 && actv_tp == 0 && actv_tp_rt == 0)
             {
-                tp_lft.BackColor = Color.Salmon;
+                pos_123 = pos[1] + pos[2] + pos[3];
             }
+            if (actv_lft == 0 && actv_md == 0 && actv_rt == 0)
+            {
+                pos_456 = pos[4] + pos[5] + pos[6];
+            }
+            if (actv_btm_lft == 0 && actv_btm == 0 && actv_btm_rt == 0)
+            {
+                pos_789 = pos[7] + pos[8] + pos[9];
+            }
+            if (actv_tp_lft == 0 && actv_lft == 0 && actv_btm_lft == 0)
+            {
+                pos_147 = pos[1] + pos[4] + pos[7];
+            }
+            if (actv_tp == 0 && actv_md == 0 && actv_btm == 0)
+            {
+                pos_258 = pos[2] + pos[5] + pos[8];
+            }
+            if (actv_tp_rt == 0 && actv_rt == 0 && actv_btm_rt == 0)
+            {
+                pos_369 = pos[3] + pos[6] + pos[9];
+            }
+            if (actv_btm_lft == 0 && actv_md == 0 && actv_tp_rt == 0)
+            {
+                pos_753 = pos[7] + pos[5] + pos[3];
+            }
+            if (actv_tp_lft == 0 && actv_md == 0 && actv_btm_rt == 0)
+            {
+                pos_159 = pos[1] + pos[5] + pos[9];
+            }
+             
+            if (pos_123 == cir_comp || pos_123 == crs_comp)
+            {
+                if (pos_123 == cir_comp)
+                {
+                    MessageBox.Show("Circle Wins");
+                    game_envi.Enabled = false;
+                }
+                else
+                {
+                    MessageBox.Show("Cross Wins");
+                    game_envi.Enabled = false; 
+                }
+            }
+            else if (pos_456 == cir_comp || pos_456 == crs_comp)
+            {
+                if (pos_456 == cir_comp)
+                {
+                    MessageBox.Show("Circle Wins");
+                    game_envi.Enabled = false;
+                }
+                else
+                {
+                    MessageBox.Show("Cross Wins");
+                    game_envi.Enabled = false;
+                }
+            }
+            else if (pos_789 == cir_comp || pos_789 == crs_comp)
+            {
+                if (pos_789 == cir_comp)
+                {
+                    MessageBox.Show("Circle Wins");
+                    game_envi.Enabled = false;
+                }
+                else
+                {
+                    MessageBox.Show("Cross Wins");
+                    game_envi.Enabled = false;
+                }
+            }
+            else if (pos_147 == cir_comp || pos_147 == crs_comp)
+            {
+                if (pos_147 == cir_comp)
+                {
+                    MessageBox.Show("Circle Wins");
+                    game_envi.Enabled = false;
+                }
+                else
+                {
+                    MessageBox.Show("Cross Wins");
+                    game_envi.Enabled = false;
+                }
+            }
+            else if (pos_258 == cir_comp || pos_258 == crs_comp)
+            {
+                if (pos_258 == cir_comp)
+                {
+                    MessageBox.Show("Circle Wins");
+                    game_envi.Enabled = false;
+                }
+                else
+                {
+                    MessageBox.Show("Cross Wins");
+                    game_envi.Enabled = false;
+                }
+            }
+            else if (pos_369 == cir_comp || pos_369 == crs_comp)
+            {
+                if (pos_369 == cir_comp)
+                {
+                    MessageBox.Show("Circle Wins");
+                    game_envi.Enabled = false;
+                }
+                else
+                {
+                    MessageBox.Show("Cross Wins");
+                    game_envi.Enabled = false;
+                }
+            }
+            else if (pos_753 == cir_comp || pos_753 == crs_comp)
+            {
+                if (pos_753 == cir_comp)
+                {
+                    MessageBox.Show("Circle Wins");
+                    game_envi.Enabled = false;
+                }
+                else
+                {
+                    MessageBox.Show("Cross Wins");
+                    game_envi.Enabled = false;
+                }
+            }
+            else if (pos_159 == cir_comp || pos_159 == crs_comp)
+            {
+                if (pos_159 == cir_comp)
+                {
+                    MessageBox.Show("Circle Wins");
+                    game_envi.Enabled = false;
+                }
+                else
+                {
+                    MessageBox.Show("Cross Wins");
+                    game_envi.Enabled = false;
+                }
+            }           
         }
     }
 }
