@@ -44,8 +44,9 @@ namespace Tic_Tac_Toe
             // 
             // tp_lft
             // 
+            this.tp_lft.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tp_lft.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tp_lft.Location = new System.Drawing.Point(13, 97);
+            this.tp_lft.Location = new System.Drawing.Point(9, 10);
             this.tp_lft.Margin = new System.Windows.Forms.Padding(0);
             this.tp_lft.Name = "tp_lft";
             this.tp_lft.Size = new System.Drawing.Size(125, 125);
@@ -55,7 +56,8 @@ namespace Tic_Tac_Toe
             // 
             // tp
             // 
-            this.tp.Location = new System.Drawing.Point(138, 97);
+            this.tp.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tp.Location = new System.Drawing.Point(134, 10);
             this.tp.Margin = new System.Windows.Forms.Padding(0);
             this.tp.Name = "tp";
             this.tp.Size = new System.Drawing.Size(125, 125);
@@ -65,7 +67,8 @@ namespace Tic_Tac_Toe
             // 
             // tp_rt
             // 
-            this.tp_rt.Location = new System.Drawing.Point(263, 97);
+            this.tp_rt.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tp_rt.Location = new System.Drawing.Point(259, 10);
             this.tp_rt.Margin = new System.Windows.Forms.Padding(0);
             this.tp_rt.Name = "tp_rt";
             this.tp_rt.Size = new System.Drawing.Size(125, 125);
@@ -75,7 +78,8 @@ namespace Tic_Tac_Toe
             // 
             // lft
             // 
-            this.lft.Location = new System.Drawing.Point(13, 222);
+            this.lft.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lft.Location = new System.Drawing.Point(9, 135);
             this.lft.Margin = new System.Windows.Forms.Padding(0);
             this.lft.Name = "lft";
             this.lft.Size = new System.Drawing.Size(125, 125);
@@ -85,7 +89,8 @@ namespace Tic_Tac_Toe
             // 
             // mid
             // 
-            this.mid.Location = new System.Drawing.Point(138, 222);
+            this.mid.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.mid.Location = new System.Drawing.Point(134, 135);
             this.mid.Margin = new System.Windows.Forms.Padding(0);
             this.mid.Name = "mid";
             this.mid.Size = new System.Drawing.Size(125, 125);
@@ -95,7 +100,8 @@ namespace Tic_Tac_Toe
             // 
             // rt
             // 
-            this.rt.Location = new System.Drawing.Point(263, 222);
+            this.rt.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rt.Location = new System.Drawing.Point(259, 135);
             this.rt.Margin = new System.Windows.Forms.Padding(0);
             this.rt.Name = "rt";
             this.rt.Size = new System.Drawing.Size(125, 125);
@@ -105,7 +111,8 @@ namespace Tic_Tac_Toe
             // 
             // btm_lft
             // 
-            this.btm_lft.Location = new System.Drawing.Point(13, 347);
+            this.btm_lft.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btm_lft.Location = new System.Drawing.Point(9, 260);
             this.btm_lft.Margin = new System.Windows.Forms.Padding(0);
             this.btm_lft.Name = "btm_lft";
             this.btm_lft.Size = new System.Drawing.Size(125, 125);
@@ -115,7 +122,8 @@ namespace Tic_Tac_Toe
             // 
             // btm
             // 
-            this.btm.Location = new System.Drawing.Point(138, 347);
+            this.btm.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btm.Location = new System.Drawing.Point(134, 260);
             this.btm.Margin = new System.Windows.Forms.Padding(0);
             this.btm.Name = "btm";
             this.btm.Size = new System.Drawing.Size(125, 125);
@@ -125,7 +133,8 @@ namespace Tic_Tac_Toe
             // 
             // btm_rt
             // 
-            this.btm_rt.Location = new System.Drawing.Point(263, 347);
+            this.btm_rt.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btm_rt.Location = new System.Drawing.Point(259, 260);
             this.btm_rt.Margin = new System.Windows.Forms.Padding(0);
             this.btm_rt.Name = "btm_rt";
             this.btm_rt.Size = new System.Drawing.Size(125, 125);
@@ -144,9 +153,9 @@ namespace Tic_Tac_Toe
             this.game_envi.Controls.Add(this.lft);
             this.game_envi.Controls.Add(this.mid);
             this.game_envi.Controls.Add(this.rt);
-            this.game_envi.Location = new System.Drawing.Point(-1, -1);
+            this.game_envi.Location = new System.Drawing.Point(0, 91);
             this.game_envi.Name = "game_envi";
-            this.game_envi.Size = new System.Drawing.Size(400, 482);
+            this.game_envi.Size = new System.Drawing.Size(400, 392);
             this.game_envi.TabIndex = 9;
             this.game_envi.Paint += new System.Windows.Forms.PaintEventHandler(this.game_envi_Paint);
             // 
