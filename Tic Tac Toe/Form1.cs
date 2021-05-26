@@ -13,10 +13,10 @@ namespace Tic_Tac_Toe
     public partial class Form1 : Form
     {
         string cir = "○";
-        string crs = "x";
+        string crs = "✕";
         string turn = "○";
         string cir_comp = "○○○";
-        string crs_comp = "xxx";
+        string crs_comp = "✕✕✕";
         IDictionary<int, string> pos = new Dictionary<int, string>();
         int actv_tp_lft = 1;
         int actv_tp = 1;
@@ -31,10 +31,7 @@ namespace Tic_Tac_Toe
         public Form1()
         {
             InitializeComponent();
-            if (actv_tp_lft == 0)
-            {
-                tp_lft.BackColor = Color.Salmon;
-            }
+
         }
 
         private void tp_lft_Click(object sender, EventArgs e)
@@ -44,6 +41,7 @@ namespace Tic_Tac_Toe
                 if (turn == cir)
                 {
                     tp_lft.Text = cir;
+                    tp_lft.BackColor = Color.Salmon;
                     turn = crs;
                     actv_tp_lft = 0;
                     pos.Add(1, cir);
@@ -51,6 +49,7 @@ namespace Tic_Tac_Toe
                 else
                 {
                     tp_lft.Text = crs;
+                    tp_lft.BackColor = Color.CornflowerBlue;
                     turn = cir;
                     actv_tp_lft = 0; ;
                     pos.Add(1, crs);
@@ -65,6 +64,7 @@ namespace Tic_Tac_Toe
                 if (turn == cir)
                 {
                     tp.Text = cir;
+                    tp.BackColor = Color.Salmon;
                     turn = crs;
                     actv_tp = 0;
                     pos.Add(2, cir);
@@ -72,6 +72,7 @@ namespace Tic_Tac_Toe
                 else
                 {
                     tp.Text = crs;
+                    tp.BackColor = Color.CornflowerBlue;
                     turn = cir;
                     actv_tp = 0;
                     pos.Add(2, crs);
@@ -86,6 +87,7 @@ namespace Tic_Tac_Toe
                 if (turn == cir)
                 {
                     tp_rt.Text = cir;
+                    tp_rt.BackColor = Color.Salmon;
                     turn = crs;
                     actv_tp_rt = 0;
                     pos.Add(3, cir);
@@ -93,6 +95,7 @@ namespace Tic_Tac_Toe
                 else
                 {
                     tp_rt.Text = crs;
+                    tp_rt.BackColor = Color.CornflowerBlue;
                     turn = cir;
                     actv_tp_rt = 0;
                     pos.Add(3, crs);
@@ -113,6 +116,7 @@ namespace Tic_Tac_Toe
                 if (turn == cir)
                 {
                     lft.Text = cir;
+                    lft.BackColor = Color.Salmon;
                     turn = crs;
                     actv_lft = 0;
                     pos.Add(4, cir);
@@ -120,6 +124,7 @@ namespace Tic_Tac_Toe
                 else
                 {
                     lft.Text = crs;
+                    lft.BackColor = Color.CornflowerBlue;
                     turn = cir;
                     actv_lft = 0;
                     pos.Add(4, crs);
@@ -134,6 +139,7 @@ namespace Tic_Tac_Toe
                 if (turn == cir)
                 {
                     mid.Text = cir;
+                    mid.BackColor = Color.Salmon;
                     turn = crs;
                     actv_md = 0;
                     pos.Add(5, cir);
@@ -141,6 +147,7 @@ namespace Tic_Tac_Toe
                 else
                 {
                     mid.Text = crs;
+                    mid.BackColor = Color.CornflowerBlue;
                     turn = cir;
                     actv_md = 0;
                     pos.Add(5, crs);
@@ -155,6 +162,7 @@ namespace Tic_Tac_Toe
                 if (turn == cir)
                 {
                     rt.Text = cir;
+                    rt.BackColor = Color.Salmon;
                     turn = crs;
                     actv_rt = 0;
                     pos.Add(6, cir);
@@ -162,6 +170,7 @@ namespace Tic_Tac_Toe
                 else
                 {
                     rt.Text = crs;
+                    rt.BackColor = Color.CornflowerBlue;
                     turn = cir;
                     actv_rt = 0;
                     pos.Add(6, crs);
@@ -176,6 +185,7 @@ namespace Tic_Tac_Toe
                 if (turn == cir)
                 {
                     btm_lft.Text = cir;
+                    btm_lft.BackColor = Color.Salmon;
                     turn = crs;
                     actv_btm_lft = 0;
                     pos.Add(7, cir);
@@ -183,6 +193,7 @@ namespace Tic_Tac_Toe
                 else
                 {
                     btm_lft.Text = crs;
+                    btm_lft.BackColor = Color.CornflowerBlue;
                     turn = cir;
                     actv_btm_lft = 0;
                     pos.Add(7, crs);
@@ -197,6 +208,7 @@ namespace Tic_Tac_Toe
                 if (turn == cir)
                 {
                     btm.Text = cir;
+                    btm.BackColor = Color.Salmon;
                     turn = crs;
                     actv_btm = 0;
                     pos.Add(8, cir);
@@ -204,6 +216,7 @@ namespace Tic_Tac_Toe
                 else
                 {
                     btm.Text = crs;
+                    btm.BackColor = Color.CornflowerBlue;
                     turn = cir;
                     actv_btm = 0;
                     pos.Add(8, crs);
@@ -218,6 +231,7 @@ namespace Tic_Tac_Toe
                 if (turn == cir)
                 {
                     btm_rt.Text = cir;
+                    btm_rt.BackColor = Color.Salmon;
                     turn = crs;
                     actv_btm_rt = 0;
                     pos.Add(9, cir);
@@ -225,6 +239,7 @@ namespace Tic_Tac_Toe
                 else
                 {
                     btm_rt.Text = crs;
+                    btm_rt.BackColor = Color.CornflowerBlue;
                     turn = cir;
                     actv_btm_rt = 0;
                     pos.Add(9, crs);
@@ -378,7 +393,7 @@ namespace Tic_Tac_Toe
                     MessageBox.Show("Cross Wins");
                     game_envi.Enabled = false;
                 }
-            }           
+            }
         }
     }
 }

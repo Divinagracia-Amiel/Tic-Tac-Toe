@@ -45,7 +45,7 @@ namespace Tic_Tac_Toe
             // tp_lft
             // 
             this.tp_lft.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tp_lft.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.tp_lft.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.tp_lft.Location = new System.Drawing.Point(9, 10);
             this.tp_lft.Margin = new System.Windows.Forms.Padding(0);
             this.tp_lft.Name = "tp_lft";
@@ -56,29 +56,34 @@ namespace Tic_Tac_Toe
             // 
             // tp
             // 
+            this.tp.BackColor = System.Drawing.SystemColors.Control;
             this.tp.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tp.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.tp.Location = new System.Drawing.Point(134, 10);
             this.tp.Margin = new System.Windows.Forms.Padding(0);
             this.tp.Name = "tp";
             this.tp.Size = new System.Drawing.Size(125, 125);
             this.tp.TabIndex = 1;
-            this.tp.UseVisualStyleBackColor = true;
+            this.tp.UseVisualStyleBackColor = false;
             this.tp.Click += new System.EventHandler(this.tp_Click);
             // 
             // tp_rt
             // 
+            this.tp_rt.BackColor = System.Drawing.SystemColors.Control;
             this.tp_rt.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tp_rt.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.tp_rt.Location = new System.Drawing.Point(259, 10);
             this.tp_rt.Margin = new System.Windows.Forms.Padding(0);
             this.tp_rt.Name = "tp_rt";
             this.tp_rt.Size = new System.Drawing.Size(125, 125);
             this.tp_rt.TabIndex = 2;
-            this.tp_rt.UseVisualStyleBackColor = true;
+            this.tp_rt.UseVisualStyleBackColor = false;
             this.tp_rt.Click += new System.EventHandler(this.tp_rt_Click);
             // 
             // lft
             // 
             this.lft.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lft.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.lft.Location = new System.Drawing.Point(9, 135);
             this.lft.Margin = new System.Windows.Forms.Padding(0);
             this.lft.Name = "lft";
@@ -90,6 +95,7 @@ namespace Tic_Tac_Toe
             // mid
             // 
             this.mid.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.mid.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.mid.Location = new System.Drawing.Point(134, 135);
             this.mid.Margin = new System.Windows.Forms.Padding(0);
             this.mid.Name = "mid";
@@ -101,6 +107,7 @@ namespace Tic_Tac_Toe
             // rt
             // 
             this.rt.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rt.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.rt.Location = new System.Drawing.Point(259, 135);
             this.rt.Margin = new System.Windows.Forms.Padding(0);
             this.rt.Name = "rt";
@@ -112,6 +119,7 @@ namespace Tic_Tac_Toe
             // btm_lft
             // 
             this.btm_lft.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btm_lft.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.btm_lft.Location = new System.Drawing.Point(9, 260);
             this.btm_lft.Margin = new System.Windows.Forms.Padding(0);
             this.btm_lft.Name = "btm_lft";
@@ -123,6 +131,7 @@ namespace Tic_Tac_Toe
             // btm
             // 
             this.btm.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btm.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.btm.Location = new System.Drawing.Point(134, 260);
             this.btm.Margin = new System.Windows.Forms.Padding(0);
             this.btm.Name = "btm";
@@ -134,6 +143,7 @@ namespace Tic_Tac_Toe
             // btm_rt
             // 
             this.btm_rt.Font = new System.Drawing.Font("Segoe UI", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btm_rt.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.btm_rt.Location = new System.Drawing.Point(259, 260);
             this.btm_rt.Margin = new System.Windows.Forms.Padding(0);
             this.btm_rt.Name = "btm_rt";
