@@ -257,6 +257,7 @@ namespace Tic_Tac_Toe
             string pos_369 = "";
             string pos_753 = "";
             string pos_159 = "";
+            bool pos_all;
             if (actv_tp_lft == 0 && actv_tp == 0 && actv_tp_rt == 0)
             {
                 pos_123 = pos[1] + pos[2] + pos[3];
@@ -393,6 +394,10 @@ namespace Tic_Tac_Toe
                     MessageBox.Show("Cross Wins");
                     game_envi.Enabled = false;
                 }
+            }
+            else if (actv_tp_lft == 0 && actv_tp == 0 && actv_tp_rt == 0 && actv_lft == 0 && actv_md == 0 && actv_rt == 0 && actv_btm_lft == 0 && actv_btm == 0 && actv_btm_rt == 0)
+            {
+                MessageBox.Show("Draw");
             }
         }
     }
