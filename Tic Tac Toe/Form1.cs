@@ -17,6 +17,9 @@ namespace Tic_Tac_Toe
         string turn = "○";
         string cir_comp = "○○○";
         string crs_comp = "✕✕✕";
+        bool off = false;
+        int cir_scr = 0;
+        int crs_scr = 0;
         IDictionary<int, string> pos = new Dictionary<int, string>();
         int actv_tp_lft = 1;
         int actv_tp = 1;
@@ -31,7 +34,6 @@ namespace Tic_Tac_Toe
         public Form1()
         {
             InitializeComponent();
-
         }
 
         private void tp_lft_Click(object sender, EventArgs e)
@@ -44,7 +46,7 @@ namespace Tic_Tac_Toe
                     tp_lft.BackColor = Color.Salmon;
                     turn = crs;
                     actv_tp_lft = 0;
-                    pos.Add(1, cir);
+                    pos[1] = cir;
                 }
                 else
                 {
@@ -52,7 +54,7 @@ namespace Tic_Tac_Toe
                     tp_lft.BackColor = Color.CornflowerBlue;
                     turn = cir;
                     actv_tp_lft = 0; ;
-                    pos.Add(1, crs);
+                    pos[1] = crs;
                 }
             }      
         }
@@ -67,7 +69,7 @@ namespace Tic_Tac_Toe
                     tp.BackColor = Color.Salmon;
                     turn = crs;
                     actv_tp = 0;
-                    pos.Add(2, cir);
+                    pos[2] = cir;
                 }
                 else
                 {
@@ -75,7 +77,7 @@ namespace Tic_Tac_Toe
                     tp.BackColor = Color.CornflowerBlue;
                     turn = cir;
                     actv_tp = 0;
-                    pos.Add(2, crs);
+                    pos[2] = crs;
                 }
             }         
         }
@@ -90,7 +92,7 @@ namespace Tic_Tac_Toe
                     tp_rt.BackColor = Color.Salmon;
                     turn = crs;
                     actv_tp_rt = 0;
-                    pos.Add(3, cir);
+                    pos[3] = cir;
                 }
                 else
                 {
@@ -98,7 +100,7 @@ namespace Tic_Tac_Toe
                     tp_rt.BackColor = Color.CornflowerBlue;
                     turn = cir;
                     actv_tp_rt = 0;
-                    pos.Add(3, crs);
+                    pos[3] = crs;
                 }
             }           
         }
@@ -119,7 +121,7 @@ namespace Tic_Tac_Toe
                     lft.BackColor = Color.Salmon;
                     turn = crs;
                     actv_lft = 0;
-                    pos.Add(4, cir);
+                    pos[4] = cir;
                 }
                 else
                 {
@@ -127,7 +129,7 @@ namespace Tic_Tac_Toe
                     lft.BackColor = Color.CornflowerBlue;
                     turn = cir;
                     actv_lft = 0;
-                    pos.Add(4, crs);
+                    pos[4] = crs;
                 }
             }          
         }
@@ -142,7 +144,7 @@ namespace Tic_Tac_Toe
                     mid.BackColor = Color.Salmon;
                     turn = crs;
                     actv_md = 0;
-                    pos.Add(5, cir);
+                    pos[5] = cir;
                 }
                 else
                 {
@@ -150,7 +152,7 @@ namespace Tic_Tac_Toe
                     mid.BackColor = Color.CornflowerBlue;
                     turn = cir;
                     actv_md = 0;
-                    pos.Add(5, crs);
+                    pos[5] = crs;
                 }
             }
         }
@@ -165,7 +167,7 @@ namespace Tic_Tac_Toe
                     rt.BackColor = Color.Salmon;
                     turn = crs;
                     actv_rt = 0;
-                    pos.Add(6, cir);
+                    pos[6] = cir;
                 }
                 else
                 {
@@ -173,7 +175,7 @@ namespace Tic_Tac_Toe
                     rt.BackColor = Color.CornflowerBlue;
                     turn = cir;
                     actv_rt = 0;
-                    pos.Add(6, crs);
+                    pos[6] = crs;
                 }
             }           
         }
@@ -188,7 +190,7 @@ namespace Tic_Tac_Toe
                     btm_lft.BackColor = Color.Salmon;
                     turn = crs;
                     actv_btm_lft = 0;
-                    pos.Add(7, cir);
+                    pos[7] = cir;
                 }
                 else
                 {
@@ -196,7 +198,7 @@ namespace Tic_Tac_Toe
                     btm_lft.BackColor = Color.CornflowerBlue;
                     turn = cir;
                     actv_btm_lft = 0;
-                    pos.Add(7, crs);
+                    pos[7] = crs;
                 }
             }           
         }
@@ -211,7 +213,7 @@ namespace Tic_Tac_Toe
                     btm.BackColor = Color.Salmon;
                     turn = crs;
                     actv_btm = 0;
-                    pos.Add(8, cir);
+                    pos[8] = cir;
                 }
                 else
                 {
@@ -219,7 +221,7 @@ namespace Tic_Tac_Toe
                     btm.BackColor = Color.CornflowerBlue;
                     turn = cir;
                     actv_btm = 0;
-                    pos.Add(8, crs);
+                    pos[8] = crs;
                 }
             }           
         }
@@ -234,7 +236,7 @@ namespace Tic_Tac_Toe
                     btm_rt.BackColor = Color.Salmon;
                     turn = crs;
                     actv_btm_rt = 0;
-                    pos.Add(9, cir);
+                    pos[9] = cir;
                 }
                 else
                 {
@@ -242,7 +244,7 @@ namespace Tic_Tac_Toe
                     btm_rt.BackColor = Color.CornflowerBlue;
                     turn = cir;
                     actv_btm_rt = 0;
-                    pos.Add(9, crs);
+                    pos[9] = crs;
                 }
             }           
         }
@@ -257,51 +259,59 @@ namespace Tic_Tac_Toe
             string pos_369 = "";
             string pos_753 = "";
             string pos_159 = "";
-            bool pos_all;
-            if (actv_tp_lft == 0 && actv_tp == 0 && actv_tp_rt == 0)
-            {
-                pos_123 = pos[1] + pos[2] + pos[3];
-            }
-            if (actv_lft == 0 && actv_md == 0 && actv_rt == 0)
-            {
-                pos_456 = pos[4] + pos[5] + pos[6];
-            }
-            if (actv_btm_lft == 0 && actv_btm == 0 && actv_btm_rt == 0)
-            {
-                pos_789 = pos[7] + pos[8] + pos[9];
-            }
-            if (actv_tp_lft == 0 && actv_lft == 0 && actv_btm_lft == 0)
-            {
-                pos_147 = pos[1] + pos[4] + pos[7];
-            }
-            if (actv_tp == 0 && actv_md == 0 && actv_btm == 0)
-            {
-                pos_258 = pos[2] + pos[5] + pos[8];
-            }
-            if (actv_tp_rt == 0 && actv_rt == 0 && actv_btm_rt == 0)
-            {
-                pos_369 = pos[3] + pos[6] + pos[9];
-            }
-            if (actv_btm_lft == 0 && actv_md == 0 && actv_tp_rt == 0)
-            {
-                pos_753 = pos[7] + pos[5] + pos[3];
-            }
-            if (actv_tp_lft == 0 && actv_md == 0 && actv_btm_rt == 0)
-            {
-                pos_159 = pos[1] + pos[5] + pos[9];
-            }
+            if (off == false)
+            {               
+                if (actv_tp_lft == 0 && actv_tp == 0 && actv_tp_rt == 0)
+                {
+                    pos_123 = pos[1] + pos[2] + pos[3];
+                }
+                if (actv_lft == 0 && actv_md == 0 && actv_rt == 0)
+                {
+                    pos_456 = pos[4] + pos[5] + pos[6];
+                }
+                if (actv_btm_lft == 0 && actv_btm == 0 && actv_btm_rt == 0)
+                {
+                    pos_789 = pos[7] + pos[8] + pos[9];
+                }
+                if (actv_tp_lft == 0 && actv_lft == 0 && actv_btm_lft == 0)
+                {
+                    pos_147 = pos[1] + pos[4] + pos[7];
+                }
+                if (actv_tp == 0 && actv_md == 0 && actv_btm == 0)
+                {
+                    pos_258 = pos[2] + pos[5] + pos[8];
+                }
+                if (actv_tp_rt == 0 && actv_rt == 0 && actv_btm_rt == 0)
+                {
+                    pos_369 = pos[3] + pos[6] + pos[9];
+                }
+                if (actv_btm_lft == 0 && actv_md == 0 && actv_tp_rt == 0)
+                {
+                    pos_753 = pos[7] + pos[5] + pos[3];
+                }
+                if (actv_tp_lft == 0 && actv_md == 0 && actv_btm_rt == 0)
+                {
+                    pos_159 = pos[1] + pos[5] + pos[9];
+                }
+            }            
              
             if (pos_123 == cir_comp || pos_123 == crs_comp)
             {
                 if (pos_123 == cir_comp)
                 {
                     MessageBox.Show("Circle Wins");
-                    game_envi.Enabled = false;
+                    pos_123 = "";
+                    off = true;
+                    cir_scr = cir_scr + 1;
+                    cir_score.Text = "○\n" + cir_scr;
                 }
                 else
                 {
                     MessageBox.Show("Cross Wins");
-                    game_envi.Enabled = false; 
+                    pos_123 = "";
+                    off = true;
+                    crs_scr = crs_scr + 1;
+                    crs_score.Text = "✕\n" + crs_scr;
                 }
             }
             else if (pos_456 == cir_comp || pos_456 == crs_comp)
@@ -309,12 +319,16 @@ namespace Tic_Tac_Toe
                 if (pos_456 == cir_comp)
                 {
                     MessageBox.Show("Circle Wins");
-                    game_envi.Enabled = false;
+                    off = true;
+                    cir_scr = cir_scr + 1;
+                    cir_score.Text = "○\n" + cir_scr;
                 }
                 else
                 {
                     MessageBox.Show("Cross Wins");
-                    game_envi.Enabled = false;
+                    off = true;
+                    crs_scr = crs_scr + 1;
+                    crs_score.Text = "✕\n" + crs_scr;
                 }
             }
             else if (pos_789 == cir_comp || pos_789 == crs_comp)
@@ -322,12 +336,16 @@ namespace Tic_Tac_Toe
                 if (pos_789 == cir_comp)
                 {
                     MessageBox.Show("Circle Wins");
-                    game_envi.Enabled = false;
+                    off = true;
+                    cir_scr = cir_scr + 1;
+                    cir_score.Text = "○\n" + cir_scr;
                 }
                 else
                 {
                     MessageBox.Show("Cross Wins");
-                    game_envi.Enabled = false;
+                    off = true;
+                    crs_scr = crs_scr + 1;
+                    crs_score.Text = "✕\n" + crs_scr;
                 }
             }
             else if (pos_147 == cir_comp || pos_147 == crs_comp)
@@ -335,12 +353,16 @@ namespace Tic_Tac_Toe
                 if (pos_147 == cir_comp)
                 {
                     MessageBox.Show("Circle Wins");
-                    game_envi.Enabled = false;
+                    off = true;
+                    cir_scr = cir_scr + 1;
+                    cir_score.Text = "○\n" + cir_scr;
                 }
                 else
                 {
                     MessageBox.Show("Cross Wins");
-                    game_envi.Enabled = false;
+                    off = true;
+                    crs_scr = crs_scr + 1;
+                    crs_score.Text = "✕\n" + crs_scr;
                 }
             }
             else if (pos_258 == cir_comp || pos_258 == crs_comp)
@@ -348,12 +370,16 @@ namespace Tic_Tac_Toe
                 if (pos_258 == cir_comp)
                 {
                     MessageBox.Show("Circle Wins");
-                    game_envi.Enabled = false;
+                    off = true;
+                    cir_scr = cir_scr + 1;
+                    cir_score.Text = "○\n" + cir_scr;
                 }
                 else
                 {
                     MessageBox.Show("Cross Wins");
-                    game_envi.Enabled = false;
+                    off = true;
+                    crs_scr = crs_scr + 1;
+                    crs_score.Text = "✕\n" + crs_scr;
                 }
             }
             else if (pos_369 == cir_comp || pos_369 == crs_comp)
@@ -361,12 +387,16 @@ namespace Tic_Tac_Toe
                 if (pos_369 == cir_comp)
                 {
                     MessageBox.Show("Circle Wins");
-                    game_envi.Enabled = false;
+                    off = true;
+                    cir_scr = cir_scr + 1;
+                    cir_score.Text = "○\n" + cir_scr;
                 }
                 else
                 {
                     MessageBox.Show("Cross Wins");
-                    game_envi.Enabled = false;
+                    off = true;
+                    crs_scr = crs_scr + 1;
+                    crs_score.Text = "✕\n" + crs_scr;
                 }
             }
             else if (pos_753 == cir_comp || pos_753 == crs_comp)
@@ -374,12 +404,16 @@ namespace Tic_Tac_Toe
                 if (pos_753 == cir_comp)
                 {
                     MessageBox.Show("Circle Wins");
-                    game_envi.Enabled = false;
+                    off = true;
+                    cir_scr = cir_scr + 1;
+                    cir_score.Text = "○\n" + cir_scr;
                 }
                 else
                 {
                     MessageBox.Show("Cross Wins");
-                    game_envi.Enabled = false;
+                    off = true;
+                    crs_scr = crs_scr + 1;
+                    crs_score.Text = "✕\n" + crs_scr;
                 }
             }
             else if (pos_159 == cir_comp || pos_159 == crs_comp)
@@ -387,18 +421,89 @@ namespace Tic_Tac_Toe
                 if (pos_159 == cir_comp)
                 {
                     MessageBox.Show("Circle Wins");
-                    game_envi.Enabled = false;
+                    off = true;
+                    cir_scr = cir_scr + 1;
+                    cir_score.Text = "○\n" + cir_scr;
                 }
                 else
                 {
                     MessageBox.Show("Cross Wins");
-                    game_envi.Enabled = false;
+                    off = true;
+                    crs_scr = crs_scr + 1;
+                    crs_score.Text = "✕\n" + crs_scr;
                 }
             }
-            else if (actv_tp_lft == 0 && actv_tp == 0 && actv_tp_rt == 0 && actv_lft == 0 && actv_md == 0 && actv_rt == 0 && actv_btm_lft == 0 && actv_btm == 0 && actv_btm_rt == 0)
+            else if (actv_tp_lft == 0 && actv_tp == 0 && actv_tp_rt == 0 && actv_lft == 0 && actv_md == 0 && actv_rt == 0 && actv_btm_lft == 0 && actv_btm == 0 && actv_btm_rt == 0 && off == false)
             {
                 MessageBox.Show("Draw");
+                off = true;
             }
+            if (off == true)
+            {
+                game_envi.Enabled = false;
+                pos[1] = "";
+                pos[2] = "";
+                pos[3] = "";
+                pos[4] = "";
+                pos[5] = "";
+                pos[6] = "";
+                pos[7] = "";
+                pos[8] = "";
+                pos[9] = "";
+                tp_lft.Text = "";
+                tp.Text = "";
+                tp_rt.Text = "";
+                lft.Text = "";
+                mid.Text = "";
+                rt.Text = "";
+                btm_lft.Text = "";
+                btm.Text = "";
+                btm_rt.Text = "";
+                actv_tp_lft = 1;
+                actv_tp = 1;
+                actv_tp_rt = 1;
+                actv_lft = 1;
+                actv_md = 1;
+                actv_rt = 1;
+                actv_btm_lft = 1;
+                actv_btm = 1;
+                actv_btm_rt = 1;
+                tp_lft.BackColor = Color.FromArgb(255,255,192);
+                tp.BackColor = Color.FromArgb(255, 255, 192);
+                tp_rt.BackColor = Color.FromArgb(255, 255, 192);
+                lft.BackColor = Color.FromArgb(255, 255, 192);
+                mid.BackColor = Color.FromArgb(255, 255, 192);
+                rt.BackColor = Color.FromArgb(255, 255, 192);
+                btm_lft.BackColor = Color.FromArgb(255, 255, 192);
+                btm.BackColor = Color.FromArgb(255, 255, 192);
+                btm_rt.BackColor = Color.FromArgb(255, 255, 192);
+                game_envi.Enabled = true;
+                off = false;
+
+            }
+        }
+
+        private void Form1_Load_1(object sender, EventArgs e)
+        {
+            pos.Add(1, "");
+            pos.Add(2, "");
+            pos.Add(3, "");
+            pos.Add(4, "");
+            pos.Add(5, "");
+            pos.Add(6, "");
+            pos.Add(7, "");
+            pos.Add(8, "");
+            pos.Add(9, "");
+        }
+
+        private void crs_score_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cir_score_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
