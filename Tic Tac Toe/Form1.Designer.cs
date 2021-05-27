@@ -191,11 +191,11 @@ namespace Tic_Tac_Toe
             // cir_score
             // 
             this.cir_score.AutoSize = true;
-            this.cir_score.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cir_score.Font = new System.Drawing.Font("Segoe UI Black", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.cir_score.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.cir_score.Location = new System.Drawing.Point(85, 9);
             this.cir_score.Name = "cir_score";
-            this.cir_score.Size = new System.Drawing.Size(49, 46);
+            this.cir_score.Size = new System.Drawing.Size(48, 45);
             this.cir_score.TabIndex = 12;
             this.cir_score.Text = "○";
             this.cir_score.Click += new System.EventHandler(this.cir_score_Click);
@@ -203,11 +203,11 @@ namespace Tic_Tac_Toe
             // crs_score
             // 
             this.crs_score.AutoSize = true;
-            this.crs_score.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.crs_score.Font = new System.Drawing.Font("Segoe UI Black", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.crs_score.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.crs_score.Location = new System.Drawing.Point(259, 9);
             this.crs_score.Name = "crs_score";
-            this.crs_score.Size = new System.Drawing.Size(48, 46);
+            this.crs_score.Size = new System.Drawing.Size(48, 45);
             this.crs_score.TabIndex = 13;
             this.crs_score.Text = "✕";
             this.crs_score.Click += new System.EventHandler(this.crs_score_Click);

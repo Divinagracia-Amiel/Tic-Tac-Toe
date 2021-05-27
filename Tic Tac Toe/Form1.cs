@@ -31,22 +31,25 @@ namespace Tic_Tac_Toe
         int actv_btm = 1;
         int actv_btm_rt = 1;
 
+
         public Form1()
         {
             InitializeComponent();
         }
 
         private void tp_lft_Click(object sender, EventArgs e)
-        {           
+        {   
             if (actv_tp_lft == 1)
             {
                 if (turn == cir)
-                {
+                {                   
                     tp_lft.Text = cir;
                     tp_lft.BackColor = Color.Salmon;
                     turn = crs;
                     actv_tp_lft = 0;
                     pos[1] = cir;
+                    crs_score.ForeColor = Color.CornflowerBlue;
+                    cir_score.ForeColor = Color.FromArgb(255, 255, 192);
                 }
                 else
                 {
@@ -55,6 +58,8 @@ namespace Tic_Tac_Toe
                     turn = cir;
                     actv_tp_lft = 0; ;
                     pos[1] = crs;
+                    cir_score.ForeColor = Color.Salmon;
+                    crs_score.ForeColor = Color.FromArgb(255, 255, 192);
                 }
             }      
         }
@@ -70,6 +75,8 @@ namespace Tic_Tac_Toe
                     turn = crs;
                     actv_tp = 0;
                     pos[2] = cir;
+                    crs_score.ForeColor = Color.CornflowerBlue;
+                    cir_score.ForeColor = Color.FromArgb(255, 255, 192);
                 }
                 else
                 {
@@ -78,6 +85,8 @@ namespace Tic_Tac_Toe
                     turn = cir;
                     actv_tp = 0;
                     pos[2] = crs;
+                    cir_score.ForeColor = Color.Salmon;
+                    crs_score.ForeColor = Color.FromArgb(255, 255, 192);
                 }
             }         
         }
@@ -93,6 +102,8 @@ namespace Tic_Tac_Toe
                     turn = crs;
                     actv_tp_rt = 0;
                     pos[3] = cir;
+                    crs_score.ForeColor = Color.CornflowerBlue;
+                    cir_score.ForeColor = Color.FromArgb(255, 255, 192);
                 }
                 else
                 {
@@ -101,6 +112,8 @@ namespace Tic_Tac_Toe
                     turn = cir;
                     actv_tp_rt = 0;
                     pos[3] = crs;
+                    cir_score.ForeColor = Color.Salmon;
+                    crs_score.ForeColor = Color.FromArgb(255, 255, 192);
                 }
             }           
         }
@@ -122,6 +135,8 @@ namespace Tic_Tac_Toe
                     turn = crs;
                     actv_lft = 0;
                     pos[4] = cir;
+                    crs_score.ForeColor = Color.CornflowerBlue;
+                    cir_score.ForeColor = Color.FromArgb(255, 255, 192);
                 }
                 else
                 {
@@ -130,6 +145,8 @@ namespace Tic_Tac_Toe
                     turn = cir;
                     actv_lft = 0;
                     pos[4] = crs;
+                    cir_score.ForeColor = Color.Salmon;
+                    crs_score.ForeColor = Color.FromArgb(255, 255, 192);
                 }
             }          
         }
@@ -145,6 +162,8 @@ namespace Tic_Tac_Toe
                     turn = crs;
                     actv_md = 0;
                     pos[5] = cir;
+                    crs_score.ForeColor = Color.CornflowerBlue;
+                    cir_score.ForeColor = Color.FromArgb(255, 255, 192);
                 }
                 else
                 {
@@ -153,6 +172,8 @@ namespace Tic_Tac_Toe
                     turn = cir;
                     actv_md = 0;
                     pos[5] = crs;
+                    cir_score.ForeColor = Color.Salmon;
+                    crs_score.ForeColor = Color.FromArgb(255, 255, 192);
                 }
             }
         }
@@ -168,6 +189,8 @@ namespace Tic_Tac_Toe
                     turn = crs;
                     actv_rt = 0;
                     pos[6] = cir;
+                    crs_score.ForeColor = Color.CornflowerBlue;
+                    cir_score.ForeColor = Color.FromArgb(255, 255, 192);
                 }
                 else
                 {
@@ -176,6 +199,8 @@ namespace Tic_Tac_Toe
                     turn = cir;
                     actv_rt = 0;
                     pos[6] = crs;
+                    cir_score.ForeColor = Color.Salmon;
+                    crs_score.ForeColor = Color.FromArgb(255, 255, 192);
                 }
             }           
         }
@@ -191,6 +216,8 @@ namespace Tic_Tac_Toe
                     turn = crs;
                     actv_btm_lft = 0;
                     pos[7] = cir;
+                    crs_score.ForeColor = Color.CornflowerBlue;
+                    cir_score.ForeColor = Color.FromArgb(255, 255, 192);
                 }
                 else
                 {
@@ -199,6 +226,8 @@ namespace Tic_Tac_Toe
                     turn = cir;
                     actv_btm_lft = 0;
                     pos[7] = crs;
+                    cir_score.ForeColor = Color.Salmon;
+                    crs_score.ForeColor = Color.FromArgb(255, 255, 192);
                 }
             }           
         }
@@ -214,6 +243,8 @@ namespace Tic_Tac_Toe
                     turn = crs;
                     actv_btm = 0;
                     pos[8] = cir;
+                    crs_score.ForeColor = Color.CornflowerBlue;
+                    cir_score.ForeColor = Color.FromArgb(255, 255, 192);
                 }
                 else
                 {
@@ -222,6 +253,8 @@ namespace Tic_Tac_Toe
                     turn = cir;
                     actv_btm = 0;
                     pos[8] = crs;
+                    cir_score.ForeColor = Color.Salmon;
+                    crs_score.ForeColor = Color.FromArgb(255, 255, 192);
                 }
             }           
         }
@@ -237,6 +270,8 @@ namespace Tic_Tac_Toe
                     turn = crs;
                     actv_btm_rt = 0;
                     pos[9] = cir;
+                    crs_score.ForeColor = Color.CornflowerBlue;
+                    cir_score.ForeColor = Color.FromArgb(255, 255, 192);
                 }
                 else
                 {
@@ -245,6 +280,8 @@ namespace Tic_Tac_Toe
                     turn = cir;
                     actv_btm_rt = 0;
                     pos[9] = crs;
+                    cir_score.ForeColor = Color.Salmon;
+                    crs_score.ForeColor = Color.FromArgb(255, 255, 192);
                 }
             }           
         }
@@ -494,6 +531,7 @@ namespace Tic_Tac_Toe
             pos.Add(7, "");
             pos.Add(8, "");
             pos.Add(9, "");
+            cir_score.ForeColor = Color.Salmon;
         }
 
         private void crs_score_Click(object sender, EventArgs e)
