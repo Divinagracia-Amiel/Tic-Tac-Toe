@@ -164,7 +164,7 @@ namespace Tic_Tac_Toe
             // 
             // game_envi
             // 
-            this.game_envi.BackColor = System.Drawing.Color.Plum;
+            this.game_envi.BackColor = System.Drawing.Color.MediumPurple;
             this.game_envi.Controls.Add(this.btm_rt);
             this.game_envi.Controls.Add(this.tp_lft);
             this.game_envi.Controls.Add(this.tp);
@@ -216,7 +216,7 @@ namespace Tic_Tac_Toe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Plum;
+            this.BackColor = System.Drawing.Color.MediumPurple;
             this.ClientSize = new System.Drawing.Size(396, 480);
             this.Controls.Add(this.crs_score);
             this.Controls.Add(this.cir_score);
