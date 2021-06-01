@@ -222,6 +222,7 @@ namespace Tic_Tac_Toe
             this.Controls.Add(this.cir_score);
             this.Controls.Add(this.o_score);
             this.Controls.Add(this.game_envi);
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load_1);
